@@ -22,7 +22,7 @@ export default {
 
     // watch([firstName, lastName], ([newFirst, newLast], [oldFirst, oldLast]) => {
 
-    // })
+    // }, {immediate: true})
 
     return {
         searchInput, results
