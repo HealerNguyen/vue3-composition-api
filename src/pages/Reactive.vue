@@ -7,22 +7,22 @@
   </ul>
 </template>
 <script>
-import {ref, computed} from 'vue'
+import {reactive, computed, toRefs} from 'vue'
 export default {
   setup() {
-    const capacity = ref(3)
-    const attending = ref(['Nguyễn Đức Tuấn','Nguyễn Thu Trang','Bùi Thị Ngọc Ánh'])
-    const increaseCapacity = () => {
-      capacity.value += 1
-    }
-    const spaceLeft = computed(() => {
-      return capacity.value - attending.value.length
+    const events = reactive({
+        capacity: 4,
+        attending: ['Nguyễn Đức Tuấn','Nguyễn Thu Trang','Bùi Thị Ngọc Ánh'],
+        spaceLeft: computed(() => {
+            return events.capacity - events.attending.length
+        })
     })
+    const increaseCapacity = () => {
+        events.capacity += 1
+    }
     return {
-      capacity,
-      attending,
-      increaseCapacity,
-      spaceLeft
+        ...toRefs(events),
+        increaseCapacity
     }
   }
 }

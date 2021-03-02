@@ -2,9 +2,9 @@
   <div>
     <img class="logo-vue" alt="Vue logo" src="./assets/logo.png" />
   </div>
-  <router-link to='/'>Trang chủ</router-link> |
-  <router-link to='/simple'>Ref</router-link> |
-  <router-link to='/reactive'>Reactive</router-link>
+  <router-link to='/'><b>Trang chủ</b></router-link> |
+  <router-link to='/simple'><b>Ref</b></router-link> |
+  <router-link to='/reactive'><b>Reactive</b></router-link>
   <router-view/>
 </template>
 
@@ -22,5 +22,8 @@
 }
 .composition {
   padding: 16px;
+}
+b {
+  color: #1967d2;
 }
 </style>
