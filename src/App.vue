@@ -4,7 +4,12 @@
   </div>
   <router-link to='/'><b>Trang chủ</b></router-link> |
   <router-link to='/simple'><b>Ref</b></router-link> |
-  <router-link to='/reactive'><b>Reactive</b></router-link>
+  <router-link to='/reactive'><b>Reactive</b></router-link> |
+  <router-link to='/modular'><b>Modular</b></router-link> |
+  <router-link to='/lifecycle'><b>LifeCycle</b></router-link> |
+    <router-link to='/example'><b>Example</b></router-link>
+
+
   <router-view/>
 </template>
 
