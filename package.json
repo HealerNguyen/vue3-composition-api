@@ -1,6 +1,7 @@
 {
   "name": "intro-to-vue3",
   "version": "0.0.0",
+  "author": "TuanNguyen",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
