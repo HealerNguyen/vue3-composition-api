@@ -1,4 +1,4 @@
-# intro-to-vue-3
+# vue-3-with composition-api
 Demo vuejs vesion 3 with vitejs
 
 ## Build Setup
